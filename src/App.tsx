@@ -19,6 +19,14 @@ const router = createBrowserRouter([
     element: <Login />,
   },
   {
+    path: "/home/:id",
+    element: (
+      <SideNav>
+        <HomePage />
+      </SideNav>
+    ),
+  },
+  {
     path: "/home",
     element: (
       <SideNav>
