@@ -16,6 +16,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import { Link } from "react-router-dom";
+import NotificationsIcon from "@mui/icons-material/Notifications";
 
 const drawerWidth = 240;
 
@@ -50,18 +51,20 @@ export default function SideNav(props: Props) {
       <Toolbar />
       <Divider />
       <List>
-        {["Home", "Market", "News", "Social"].map((text, index) => (
-          <Link to={`/${text}`}>
-            <ListItem key={text} disablePadding>
-              <ListItemButton>
-                <ListItemIcon>
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                </ListItemIcon>
-                <ListItemText primary={text} />
-              </ListItemButton>
-            </ListItem>
-          </Link>
-        ))}
+        {["Home", "Market", "News", "Social", "Dashboard"].map(
+          (text, index) => (
+            <Link to={`/${text}`}>
+              <ListItem key={text} disablePadding>
+                <ListItemButton>
+                  <ListItemIcon>
+                    {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                  </ListItemIcon>
+                  <ListItemText primary={text} />
+                </ListItemButton>
+              </ListItem>
+            </Link>
+          )
+        )}
       </List>
       <Divider />
       <List>
@@ -104,8 +107,9 @@ export default function SideNav(props: Props) {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap component="div">
-            Responsive drawer
+            Trading
           </Typography>
+          <NotificationsIcon />
         </Toolbar>
       </AppBar>
       <Box
@@ -154,7 +158,8 @@ export default function SideNav(props: Props) {
           width: { sm: `calc(100% - ${drawerWidth}px)` },
         }}
       >
-        <Toolbar />
+        {/* <Toolbar /> */}
+
         {children}
       </Box>
     </Box>

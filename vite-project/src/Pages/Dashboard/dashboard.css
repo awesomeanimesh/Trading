@@ -1,0 +1,60 @@
+.dashboard{
+    display: flex;
+    /* justify-content: space-between;
+    margin: 0 auto;
+    width: 100%; */
+    
+}
+.portfolio{
+    /* display: flex;  */
+    /* margin: 1rem; */
+    background-color: #f9f9f9;
+    padding: 1rem;
+    
+}
+.pValueTitle{
+    display: flex;
+    justify-content: space-between;
+}
+.pData{
+    display: flex;
+    gap: 1rem;
+    background-color: white;
+}
+.pValue{
+    display: flex;
+}
+.pGrowth{
+    color: green;
+    font-size: 2rem;
+}
+.pAmount{
+    font-size: 2rem;
+}
+.pAmountCurrent{
+    color: green;
+}
+.myPortfolioWrapper{
+    background-color: #f9f9f9;
+}
+.myPortfolioData{
+    display: flex; 
+}
+.myPortfolioCard{
+    /* display: flex; */
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+    grid-gap: 10px; /* Adjust the gap between items as needed */
+  }
+  
+  .grid-item {
+    /* border: 1px solid #ccc; */
+    padding: 20px;
+    text-align: center;
+  }
+  .companyImg{
+    max-width: 20px;
+  }
+  
