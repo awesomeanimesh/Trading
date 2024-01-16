@@ -53,7 +53,7 @@ export default function SideNav(props: Props) {
       <List>
         {["Home", "Market", "News", "Social", "Dashboard"].map(
           (text, index) => (
-            <Link to={`/${text}`}>
+            <Link to={`/${text.toLowerCase()}`}>
               <ListItem key={text} disablePadding>
                 <ListItemButton>
                   <ListItemIcon>
