@@ -1,9 +1,4 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
-
 function HomePage() {
-  const navigate = useNavigate();
-
   const handleLogin = () => {
     // Get the current origin and append the desired path
     const homepageURL = `${window.location.origin}/Home`;
