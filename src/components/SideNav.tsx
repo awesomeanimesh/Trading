@@ -51,7 +51,7 @@ export default function SideNav(props: Props) {
       <Toolbar />
       <Divider />
       <List>
-        {["Home", "Market", "News", "Social", "Dashboard"].map(
+        {["Home", "Conditions", "Strategies", "Social", "Dashboard"].map(
           (text, index) => (
             <Link to={`/${text.toLowerCase()}`}>
               <ListItem key={text} disablePadding>
@@ -68,7 +68,7 @@ export default function SideNav(props: Props) {
       </List>
       <Divider />
       <List>
-        {["All mail", "Trash", "Spam"].map((text, index) => (
+        {["Order Book", "Trade Book", "Positions"].map((text, index) => (
           <ListItem key={text} disablePadding>
             <ListItemButton>
               <ListItemIcon>

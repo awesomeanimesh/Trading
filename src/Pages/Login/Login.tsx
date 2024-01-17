@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useMyContext } from "../../components/MyContext";
 
 const Login: React.FC = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
   const navigate = useNavigate();
+  const { setData } = useMyContext();
 
   const handleLogin = () => {
     // Add your authentication logic here
@@ -16,6 +18,11 @@ const Login: React.FC = () => {
       setErrorMessage("");
       // Add your authentication logic (e.g., API call, authentication service) here
       // If authentication is successful, you can navigate to the next page
+
+      setData((prevData) => ({
+        ...prevData,
+        username,
+      }));
       navigate("/home");
       console.log("Authentication successful");
     }

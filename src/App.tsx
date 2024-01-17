@@ -9,9 +9,10 @@ import {
 import Login from "./Pages/Login/Login";
 import SideNav from "./components/SideNav";
 import HomePage from "./Pages/HomePage/Homepage";
-import Market from "./Pages/Market/Market";
 import ErrorPage from "./Pages/ErrorPage/ErrorPage";
 import Dashboard from "./Pages/Dashboard/Dashboard";
+import Conditions from "./Pages/Conditions/Conditions";
+import Strategies from "./Pages/Strategies/Strategies";
 
 const router = createBrowserRouter([
   {
@@ -35,10 +36,10 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/market",
+    path: "/conditions",
     element: (
       <SideNav>
-        <Market />
+        <Conditions />
       </SideNav>
     ),
   },
@@ -47,6 +48,14 @@ const router = createBrowserRouter([
     element: (
       <SideNav>
         <Dashboard />
+      </SideNav>
+    ),
+  },
+  {
+    path: "/strategies",
+    element: (
+      <SideNav>
+        <Strategies />
       </SideNav>
     ),
   },

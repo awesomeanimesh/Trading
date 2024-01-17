@@ -1,0 +1,40 @@
+/* YourFormComponent.css */
+.conditionsTitle{
+    display: flex;
+    justify-content: space-between;
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the form */
+  }
+  
+  .form-label {
+    margin-bottom: 10px;
+  }
+  
+  .radio-group {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+  }
+  
+  .form-select,
+  .form-input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .form-submit {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Your additional styles go here if needed */
+  
